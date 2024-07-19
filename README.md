@@ -17,6 +17,8 @@ Includes the following libraries:
  4. Make sure the Docker daemon is running in the background
  5. In VS Code, click on the blue icon at the bottom right corner and select "Reopen in Container". This will build the container -if it is the first time you run it- or will start an already existing one.
 
+This will open your project folder as a volume shared between your windows host system and the container (more about [dev containers](https://code.visualstudio.com/docs/devcontainers/containers)). You can use VS Code as if you were in linux (run commands using the command line, run Jupyter notebooks using the Python image as your engine, etc.)
+
 ## Customisations
 You can install your Python packages by running `pip install package_name`. Please note that whatever changes you make inside the container (environment variables, pip packages, system libraries, etc.) will be lost if you delete or rebuild the container.
 
