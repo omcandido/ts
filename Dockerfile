@@ -14,7 +14,7 @@ ENV PYTHONPATH="${PYTHONPATH}:/app"
 
 # Update the package list and install some basic packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git curl gpg
+    git curl gpg libgomp1
 
 # This installs the sql server drivers
 COPY msodbcsql17.sh .
@@ -25,6 +25,7 @@ RUN rm -rf /bin/sh && ln -s /usr/bin/bash /bin/sh
 
 # Tell git not to track line endings
 RUN git config --global core.autocrlf true
+
 
 WORKDIR /app
 
