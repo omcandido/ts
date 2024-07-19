@@ -1,0 +1,15 @@
+services:
+  ts:
+    image: omcandido/ts
+    volumes:
+      - ./:/app
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+# docker-compose run --rm ts
