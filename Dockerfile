@@ -26,9 +26,7 @@ RUN rm -rf /bin/sh && ln -s /usr/bin/bash /bin/sh
 # Tell git not to track line endings
 RUN git config --global core.autocrlf true
 
-
 WORKDIR /app
-
 
 # docker build -t omcandido/ts .
 # docker run --gpus all -it -v ".:/app" omcandido/ts
