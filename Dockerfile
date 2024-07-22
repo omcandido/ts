@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.12-alpine
 
 # Make sure pip is up to date
 RUN pip install --upgrade pip
@@ -28,6 +28,9 @@ RUN git config --global core.autocrlf true
 
 WORKDIR /app
 
-# docker build -t omcandido/ts .
+
+# command build docker image without cache:
+
+# docker build --no-cache -t omcandido/ts .
 # docker run --gpus all -it -v ".:/app" omcandido/ts
 # docker push omcandido/ts
