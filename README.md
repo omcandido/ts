@@ -1,4 +1,4 @@
-This is a template made to get data scientists new to Docker up to speed.The template contains a skeleton of configuration files and examples. It creates a development environment in VS Code that is GPU-ready and includes a selection of libraries for working with time series.
+This is a template made to get data scientists new to Docker up to speed. The template contains a skeleton of configuration files and examples. It creates a development environment in VS Code that is GPU-ready and includes a selection of libraries for working with time series.
 Includes the following libraries:
  - [MLForecast](https://nixtlaverse.nixtla.io/mlforecast/index.html)
  - [scikit-learn](https://scikit-learn.org/)
